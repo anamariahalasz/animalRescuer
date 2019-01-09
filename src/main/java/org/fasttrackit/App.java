@@ -14,7 +14,6 @@ public class App
 
         FoodForAnimals firstFoodForAnimals = new FoodForAnimals("chicken meat", 1.25, 5, LocalDate.of(2019, 4, 23), true);
 
-
         RecreationalActivity firstRecreationalActivity = new RecreationalActivity("running");
 
         Dog firstAnimal = new Dog("Oscar", 1, 8, 3, firstFoodForAnimals, firstRecreationalActivity, "Golden Retriever");
