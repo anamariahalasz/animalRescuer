@@ -24,5 +24,7 @@ public class App
 
         Game firstGame = new Game(firstAdopter,firstAnimal,firstVeterinaryDoctor);
 
+        firstAdopter.feedTheAnimal(firstAnimal, firstFoodForAnimals);
+        firstAdopter.activityWithAnimal(firstAnimal,firstRecreationalActivity);
     }
 }
