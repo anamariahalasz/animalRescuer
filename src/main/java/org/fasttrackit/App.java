@@ -16,7 +16,7 @@ public class App
 
         RecreationalActivity firstRecreationalActivity = new RecreationalActivity("running");
 
-        Dog firstAnimal = new Dog("Oscar", 1, 8, 3, firstFoodForAnimals, firstRecreationalActivity, "Golden Retriever");
+        Dog firstAnimal = new Dog("Oscar", 1, 8);
 
         Adopter firstAdopter = new Adopter("Jake", 29, "cop", 1000);
 
@@ -27,8 +27,7 @@ public class App
         firstAdopter.feedTheAnimal(firstAnimal, firstFoodForAnimals);
         firstAdopter.activityWithAnimal(firstAnimal,firstRecreationalActivity);
 
-        Animal cat = new Animal ("Tom", 2, 9, 2, new FoodForAnimals("Whiskas", 1.75, 7, LocalDate.of(2019, 8, 12), true),
-                new RecreationalActivity("playing"));
+        Animal cat = new Animal ("Tom", 2, 9);
 
         firstAnimal.mood();
         cat.mood();

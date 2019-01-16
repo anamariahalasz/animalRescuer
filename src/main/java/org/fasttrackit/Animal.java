@@ -6,16 +6,13 @@ public class Animal {
     private int age;
     private int healthCondition;
     private int levelOfHunger;
-    private FoodForAnimals nameOfFavoriteFood;
-    private RecreationalActivity nameOfFavoriteRecreationalActivity;
+    private String nameOfFavoriteFood;
+    private String nameOfFavoriteRecreationalActivity;
 
-    public Animal (String name, int age, int healthCondition, int levelOfHunger, FoodForAnimals nameOfFavoriteFood, RecreationalActivity nameOfFavoriteRecreationalActivity) {
+    public Animal (String name, int age, int healthCondition) {
         this.name = name;
         this.age = age;
         this.healthCondition = healthCondition;
-        this.levelOfHunger = levelOfHunger;
-        this.nameOfFavoriteFood = nameOfFavoriteFood;
-        this.nameOfFavoriteRecreationalActivity = nameOfFavoriteRecreationalActivity;
     }
 
     public String getName() {
@@ -50,19 +47,19 @@ public class Animal {
         this.levelOfHunger = levelOfHunger;
     }
 
-    public FoodForAnimals getNameOfFavoriteFood() {
+    public String getNameOfFavoriteFood() {
         return nameOfFavoriteFood;
     }
 
-    public void setNameOfFavoriteFood(FoodForAnimals nameOfFavoriteFood) {
+    public void setNameOfFavoriteFood(String nameOfFavoriteFood) {
         this.nameOfFavoriteFood = nameOfFavoriteFood;
     }
 
-    public RecreationalActivity getNameOfFavoriteRecreationalActivity() {
+    public String getNameOfFavoriteRecreationalActivity() {
         return nameOfFavoriteRecreationalActivity;
     }
 
-    public void setNameOfFavoriteRecreationalActivity(RecreationalActivity nameOfFavoriteRecreationalActivity) {
+    public void setNameOfFavoriteRecreationalActivity(String nameOfFavoriteRecreationalActivity) {
         this.nameOfFavoriteRecreationalActivity = nameOfFavoriteRecreationalActivity;
     }
 
