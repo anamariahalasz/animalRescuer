@@ -26,5 +26,11 @@ public class App
 
         firstAdopter.feedTheAnimal(firstAnimal, firstFoodForAnimals);
         firstAdopter.activityWithAnimal(firstAnimal,firstRecreationalActivity);
+
+        Animal cat = new Animal ("Tom", 2, 9, 2, new FoodForAnimals("Whiskas", 1.75, 7, LocalDate.of(2019, 8, 12), true),
+                new RecreationalActivity("playing"));
+
+        firstAnimal.mood();
+        cat.mood();
     }
 }

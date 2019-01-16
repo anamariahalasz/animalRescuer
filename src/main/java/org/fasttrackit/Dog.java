@@ -16,4 +16,9 @@ public class Dog extends Animal {
     public void setBreed(String breed) {
         this.breed = breed;
     }
+
+    @Override
+    public void mood() {
+        System.out.println("The dog wags his tail.");
+    }
 }

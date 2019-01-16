@@ -65,4 +65,8 @@ public class Animal {
     public void setNameOfFavoriteRecreationalActivity(RecreationalActivity nameOfFavoriteRecreationalActivity) {
         this.nameOfFavoriteRecreationalActivity = nameOfFavoriteRecreationalActivity;
     }
+
+    public void mood () {
+        System.out.println("Happy animal.");
+    }
 }
