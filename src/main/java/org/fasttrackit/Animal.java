@@ -6,6 +6,7 @@ public class Animal {
     private int age;
     private int healthCondition;
     private int levelOfHunger;
+    private int happinessLevel;
     private String nameOfFavoriteFood;
     private String nameOfFavoriteRecreationalActivity;
 
@@ -47,13 +48,15 @@ public class Animal {
         this.levelOfHunger = levelOfHunger;
     }
 
+    public int getHappinessLevel() { return happinessLevel; }
+
+    public void setHappinessLevel(int happinessLevel) { this.happinessLevel = happinessLevel; }
+
     public String getNameOfFavoriteFood() {
         return nameOfFavoriteFood;
     }
 
-    public void setNameOfFavoriteFood(String nameOfFavoriteFood) {
-        this.nameOfFavoriteFood = nameOfFavoriteFood;
-    }
+    public void setNameOfFavoriteFood(String nameOfFavoriteFood) { this.nameOfFavoriteFood = nameOfFavoriteFood; }
 
     public String getNameOfFavoriteRecreationalActivity() {
         return nameOfFavoriteRecreationalActivity;

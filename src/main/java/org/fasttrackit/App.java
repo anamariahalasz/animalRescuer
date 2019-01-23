@@ -16,20 +16,24 @@ public class App
 
         RecreationalActivity firstRecreationalActivity = new RecreationalActivity("running");
 
-        Animal firstAnimal = new Dog("Oscar", 1, 8);
+        Animal dog = new Dog("Oscar", 1, 8);
+        dog.setLevelOfHunger(5);
+        dog.setHappinessLevel(7);
 
         Adopter firstAdopter = new Adopter("Jake", 29, "cop", 1000);
 
         VeterinaryDoctor firstVeterinaryDoctor = new VeterinaryDoctor("Julia", 32, "veterinary doctor", "epidemiology");
 
-        Game firstGame = new Game(firstAdopter,firstAnimal,firstVeterinaryDoctor);
+        Game firstGame = new Game(firstAdopter,dog,firstVeterinaryDoctor);
 
-        firstAdopter.feedTheAnimal(firstAnimal, firstFoodForAnimals);
-        firstAdopter.activityWithAnimal(firstAnimal,firstRecreationalActivity);
+        firstAdopter.feedTheAnimal(dog, firstFoodForAnimals);
+        firstAdopter.activityWithAnimal(dog,firstRecreationalActivity);
 
         Animal cat = new Animal ("Tom", 2, 9);
+        cat.setLevelOfHunger(3);
+        cat.setHappinessLevel(8);
 
-        firstAnimal.mood();
+        dog.mood();
         cat.mood();
     }
 }
