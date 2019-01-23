@@ -43,5 +43,7 @@ public class App
 
         dog.mood();
         cat.mood();
+
+        firstGame.start();
     }
 }
