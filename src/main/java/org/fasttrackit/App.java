@@ -16,7 +16,7 @@ public class App
 
         RecreationalActivity firstRecreationalActivity = new RecreationalActivity("running");
 
-        Dog firstAnimal = new Dog("Oscar", 1, 8);
+        Animal firstAnimal = new Dog("Oscar", 1, 8);
 
         Adopter firstAdopter = new Adopter("Jake", 29, "cop", 1000);
 
