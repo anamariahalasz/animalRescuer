@@ -4,8 +4,8 @@ public class Adopter extends Person {
 
     private double amountOfMoney;
 
-    public Adopter (String name, int age, String occupation, double amountOfMoney) {
-        super(name, age, occupation);
+    public Adopter (String name, double amountOfMoney) {
+        super(name);
         this.amountOfMoney = amountOfMoney;
     }
 
@@ -20,9 +20,9 @@ public class Adopter extends Person {
     public void feedTheAnimal(Animal animal,FoodForAnimals foodForAnimals) {
         System.out.println(this.getName() + " just gave some " + foodForAnimals.getName() + " food to " + animal.getName());
 
-        System.out.println(animal.getName() + " Level of hunger: " + animal.getLevelOfHunger());
-        animal.setLevelOfHunger(animal.getLevelOfHunger() - 1);
-        System.out.println(animal.getName() + " New level of hunger: " + animal.getLevelOfHunger());
+        //System.out.println(animal.getName() + " Level of hunger: " + animal.getLevelOfHunger());
+        animal.setLevelOfHunger(animal.getLevelOfHunger() - 2);
+       // System.out.println(animal.getName() + " New level of hunger: " + animal.getLevelOfHunger());
         if(animal.getNameOfFavoriteFood().equals(foodForAnimals.getName()))
             animal.setHappinessLevel(animal.getHappinessLevel() + 1);
     }
@@ -30,13 +30,13 @@ public class Adopter extends Person {
     public void activityWithAnimal (Animal animal,RecreationalActivity recreationalActivity) {
         System.out.println(this.getName() + " " + recreationalActivity.getName() + " with " + animal.getName());
 
-        System.out.println(animal.getName() + " Happiness level: " + animal.getHappinessLevel());
+        //System.out.println(animal.getName() + " Happiness level: " + animal.getHappinessLevel());
         if (animal.getNameOfFavoriteRecreationalActivity().equals(recreationalActivity.getName()) )
-            animal.setHappinessLevel(animal.getHappinessLevel() + 2);
+            animal.setHappinessLevel(animal.getHappinessLevel() + 3);
         else
-            animal.setHappinessLevel(animal.getHappinessLevel() + 1);
+            animal.setHappinessLevel(animal.getHappinessLevel() + 2);
 
-        System.out.println(animal.getName() + " New happiness level: " + animal.getHappinessLevel());
+        //System.out.println(animal.getName() + " New happiness level: " + animal.getHappinessLevel());
 
 
     }

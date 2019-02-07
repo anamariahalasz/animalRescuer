@@ -6,10 +6,8 @@ public class Person {
     private int age;
     private String occupation;
 
-    public Person (String name, int age, String occupation) {
+    public Person (String name) {
         this.name = name;
-        this.age = age;
-        this.occupation = occupation;
     }
 
     public String getName(){

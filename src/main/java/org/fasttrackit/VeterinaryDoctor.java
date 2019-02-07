@@ -4,8 +4,8 @@ public class VeterinaryDoctor extends Person {
 
     private String specialization;
 
-    public VeterinaryDoctor (String name, int age, String occupation, String specialization) {
-        super(name,age,occupation);
+    public VeterinaryDoctor (String name, String specialization) {
+        super(name);
         this.specialization = specialization;
     }
 

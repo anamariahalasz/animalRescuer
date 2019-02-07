@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import java.util.Scanner;
+
 public class Animal {
 
     private String name;
@@ -14,6 +16,9 @@ public class Animal {
         this.name = name;
         this.age = age;
         this.healthCondition = healthCondition;
+    }
+
+    public Animal() {
     }
 
     public String getName() {
@@ -68,5 +73,15 @@ public class Animal {
 
     public void mood () {
         System.out.println("Happy animal.");
+    }
+
+    public void createAnimal(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter the name: ");
+        this.name = scanner.nextLine();
+        System.out.println("Your animal's name is: " + this.name);
+
+        this.age = 0;
+        this.healthCondition = 10;
     }
 }
